@@ -28,7 +28,7 @@ RUN chown -R jenkins:jenkins /home/jenkins
 RUN apt -qy install nodejs npm
 
 # install docker
-RUN apt-get install -qy docker.io
+RUN apt-get install -qy docker-ce docker-ce-cli containerd.io
 RUN usermod -aG docker jenkins
 
 # install docker-compose
